@@ -1,0 +1,199 @@
+.pokemain-global {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 8px;
+  margin: 16px;
+}
+
+.pokemain-container {
+  height: 112px;
+  display: grid;
+  grid-template-rows: 16fr 72fr 24fr;
+  border: 1px solid;
+  border-radius: 8px;
+}
+
+.pokemain-id {
+  grid-row: 1;
+  border-radius: 8px;
+  font-size: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 0 7px;
+}
+
+.pokemain-container-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pokemain-img {
+  grid-row: 2;
+  width: 72px;
+  border-radius: 8px;
+}
+
+.pokemain-name {
+  grid-row: 3;
+  color: white;
+  border-radius: 0px 0px 6px 6px;
+  padding: 0 5px;
+  font-size: 10px;
+  font-weight: 100;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.link {
+  text-decoration: none;
+}
+input {
+  width: 50px;
+  border-radius: 10px;
+  border: 1px solid black;
+  height: 10px;
+  font-size: 8px;
+  text-align: center;
+  font-weight: bold;
+}
+select {
+  border: none;
+  font-size: 10px;
+  font-weight: 700;
+  color: white;
+}
+select::selection {
+  border: none;
+}
+.pokemon-description {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.inputDescription {
+  width: 85%;
+  height: 35px;
+}
+.moves {
+  width: 65px;
+  height: 12px;
+}
+.inputName {
+  width: 200px;
+  height: 20px;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+}
+.inputNumber {
+  width: 65px;
+  height: 15px;
+  font-size: 10px;
+}
+.Cualquiera {
+  justify-content: center;
+  display: flex;
+}
+.botonDeImg {
+  position: relative;
+  top: 46px;
+  border-radius: 30px;
+  width: 100px;
+  border: none;
+  height: 20px;
+  color: white;
+}
+.espacio {
+  height: 180px;
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  align-items: center;
+}
+.espacio2 {
+  width: 80%;
+  height: 40px;
+}
+.botonDeLaImg {
+  position: relative;
+  top: 46px;
+  border-radius: 30px;
+  width: 100px;
+  border: none;
+  height: 20px;
+  color: white;
+}
+.cargarPoke {
+  display: flex;
+  justify-content: center;
+  height: 30px;
+}
+.CargarPokemon {
+  width: 80%;
+  position: relative;
+  top: 7px;
+  background-color: transparent;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+.faltanDatos {
+  text-align: center;
+  font-size: small;
+  position: relative;
+  top: 10px;
+}
+
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+.pokeball {
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid;
+  animation: frames 0.8s linear 0s infinite;
+}
+
+.pokeball:after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 30px;
+  background-color: red;
+  border-bottom: 4px solid;
+  top: -4px;
+}
+
+.pokeball:before {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  width: 10px;
+  height: 10px;
+  border: 4px solid;
+  border-radius: 50%;
+  bottom: 18px;
+  right: 18px;
+  z-index: 1;
+}
+
+/* AnimationFrames */
+@keyframes frames {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

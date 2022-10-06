@@ -1,0 +1,35 @@
+.nav-container {
+    height: 32px;
+    padding: 40px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    display: flex;
+}
+
+.nav-img {
+    width: 32px;
+    margin: auto 8px;
+}
+
+.nav-h2 {
+    height: 32px;
+    margin: auto 8px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-h2 h2 {
+    font-size: 1.7rem;
+}
+
+.nav-button {
+    background-color: transparent;
+    margin: auto 8px;
+    border: none;
+    width: 28px;
+    height: 25px;
+}

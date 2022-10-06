@@ -1,0 +1,18 @@
+.buscador-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto 16px;
+}
+
+.buscador-input {
+    padding: auto;
+    width: 100%;
+    height: 24px;
+    border-radius: 8px; 
+    border: 1px solid #E0E0E0;
+    text-align: center;
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
+}
