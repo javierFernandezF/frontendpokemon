@@ -19,7 +19,7 @@ const Login = ({ setPokebolaAppears, pokebolaAppears }) => {
   const setJwt = async () => {
     try {
       setPokebolaAppears(true);
-      const respuesta = await fetch("http://localhost:3000/users/login", {
+      const respuesta = await fetch("https://backendpokemon.apps.ocp.incodom.incosa.com.uy/users/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

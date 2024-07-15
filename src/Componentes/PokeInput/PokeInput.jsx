@@ -88,7 +88,7 @@ const PokeInput = ({ numberOfPokemon }) => {
   // };
   const cargarPokemon = async () => {
     try {
-      const respuesta = await fetch("http://localhost:3000/pokemones/agregar", {
+      const respuesta = await fetch("https://backendpokemon.apps.ocp.incodom.incosa.com.uy/pokemones/agregar", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

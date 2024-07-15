@@ -20,7 +20,7 @@ const RoutesApp = () => {
   const getpokemones = async () => {
     setPokebolaAppears(true);
     const allpokemones = await axios(
-      "http://localhost:3000/pokemones/obtener",
+      "https://backendpokemon.apps.ocp.incodom.incosa.com.uy/pokemones/obtener",
       {
         headers: {
           "auth-token": token,
